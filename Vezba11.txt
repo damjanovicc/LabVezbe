@@ -1,0 +1,12 @@
+uart
+core
+
+&i2c1 {
+	status = "okay";
+	clock-frequency = <100000>;
+	nunchuk:nunchuk@52 {
+		status = "okay";
+		reg = <0x52>;
+		compatible = "nintendo, nunchuk";
+	};
+};
